@@ -1,17 +1,20 @@
 <mat-card class="title">読んだ本</mat-card>
 <mat-card>
     <mat-card-title class="book-register">書籍登録</mat-card-title>
-    <form class="input">
-        <mat-form-field class="full-width" appearance="fill">
+    <form class="input-area">
+        <mat-form-field  appearance="fill">
             <mat-label>書籍名</mat-label>
             <input matInput placeholder="書籍名">
         </mat-form-field>
 
-        <mat-form-field class="full-width"appearance="fill">
-            <mat-label>あらすじ</mat-label>
-            <input matInput placeholder="あらすじ">
-        </mat-form-field>
-        <mat-form-field class="full-width"appearance="fill">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>あらすじ</mat-label>
+                <textarea matInput placeholder="あらすじ"></textarea>
+            </mat-form-field>
+        </p>
+
+        <mat-form-field class="input-rating"appearance="fill">
             <mat-label>評価点</mat-label>
             <input matInput placeholder="評価点">
         </mat-form-field>

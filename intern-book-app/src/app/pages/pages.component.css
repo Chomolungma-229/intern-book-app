@@ -4,19 +4,19 @@
     width: 100%;
 }
 
-.full-width {
-    width: 100%;
-    background-color: gray;
-
+mat-form-field {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
-.input {
+.input-rating {
   min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+  max-width: 300px;
+  width: 100%;
 }
 
 .title{
-  background-color: rgb(57, 57, 218);
+  background-color: royalblue;
   color: white;
 }
