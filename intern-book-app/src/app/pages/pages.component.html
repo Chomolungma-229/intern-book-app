@@ -1,22 +1,66 @@
-<mat-card class="title">読んだ本</mat-card>
 <mat-card>
     <mat-card-title class="book-register">書籍登録</mat-card-title>
-    <form class="input">
-        <mat-form-field class="full-width" appearance="fill">
+    <form class="input-area">
+        <mat-form-field  appearance="fill">
             <mat-label>書籍名</mat-label>
             <input matInput placeholder="書籍名">
         </mat-form-field>
 
-        <mat-form-field class="full-width"appearance="fill">
-            <mat-label>あらすじ</mat-label>
-            <input matInput placeholder="あらすじ">
-        </mat-form-field>
-        <mat-form-field class="full-width"appearance="fill">
+        <p>
+            <mat-form-field appearance="fill">
+                <mat-label>あらすじ</mat-label>
+                <textarea matInput placeholder="あらすじ"></textarea>
+            </mat-form-field>
+        </p>
+
+        <mat-form-field class="input-rating"appearance="fill">
             <mat-label>評価点</mat-label>
             <input matInput placeholder="評価点">
         </mat-form-field>
     </form>
+    <mat-card-footer>
+        <section>
+            <div class="button">
+            <button mat-raised-button color="accent">追加</button>
+            </div>
+        </section>
+    </mat-card-footer>
 </mat-card>
+
+<p>
+    <mat-card>
+        <mat-card-title>※追加された本※</mat-card-title>
+        <p>
+            <a>〜あらすじ〜</a>
+        </p>
+        <a>評価点　[点数を入力]点</a>
+        <mat-card-footer>
+            <section>
+                <div class="button">
+                <button mat-raised-button color="warn">削除</button>
+                </div>
+            </section>
+        </mat-card-footer>
+    </mat-card>
+</p>
+
+<p>
+    <mat-card>
+        <mat-card-title>リーダブルコード</mat-card-title>
+        <p>
+            <a>読むとハッピーになれる魔法の本、プログラムを組む人は必読すべきと言っても過言ではない</a>
+        </p>
+        <a>評価点　95点</a>
+        <mat-card-footer>
+            <section>
+                <div class="button">
+                <button mat-raised-button color="warn">削除</button>
+                </div>
+            </section>
+        </mat-card-footer>
+    </mat-card>
+</p>
+
 
 
 <img src="https://drive.google.com/uc?id=1RPpbzbHpE_3ScOIez5IWsBfF-flRkyG0" width="800">
