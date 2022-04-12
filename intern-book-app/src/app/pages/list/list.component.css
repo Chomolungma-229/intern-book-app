@@ -21,7 +21,6 @@ mat-form-field {
   width: 100%;
 }
 
-.title{
-  background-color: royalblue;
-  color: white;
+.book-card {
+  margin: 10px;
 }
