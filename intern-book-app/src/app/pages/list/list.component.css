@@ -1,26 +1,23 @@
-.book-register {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+.register {
+  margin: 10px 20px;
 }
 
-mat-form-field {
+.mid-width {
   min-width: 150px;
-  max-width: 500px;
+  max-width: 600px;
   width: 100%;
 }
-
 .button {
   display: grid;
   justify-content: right;
 }
 
-.input-rating {
+.rating {
   min-width: 150px;
   max-width: 300px;
   width: 100%;
 }
 
 .book-card {
-  margin: 10px;
+  margin: 10px 20px;
 }

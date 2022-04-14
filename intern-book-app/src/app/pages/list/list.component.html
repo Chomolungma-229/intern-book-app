@@ -1,8 +1,8 @@
-<mat-card>
-    <mat-card-title class="book-register">書籍登録</mat-card-title>
+<mat-card class="register">
+    <mat-card-title class="register">書籍登録</mat-card-title>
     <form class="input-area">
         <div>
-            <mat-form-field  appearance="fill">
+            <mat-form-field class="mid-width" appearance="fill">
                 <mat-label>書籍名</mat-label>
                 <input matInput placeholder="書籍名">
             </mat-form-field>
@@ -10,14 +10,14 @@
         </div>
 
         <div>
-            <mat-form-field appearance="fill">
+            <mat-form-field class="mid-width" appearance="fill">
                 <mat-label>あらすじ</mat-label>
                 <textarea matInput placeholder="あらすじ"></textarea>
             </mat-form-field>
         </div>
 
         <div>
-            <mat-form-field class="input-rating"appearance="fill">
+            <mat-form-field class="rating"appearance="fill">
                 <mat-label>評価点</mat-label>
                 <input matInput placeholder="評価点">
             </mat-form-field>
@@ -37,10 +37,10 @@
 <mat-card class="book-card">
     <mat-card-title>※追加された本※</mat-card-title>
     <mat-card-content>
-        <p>
+        <div>
             〜あらすじ〜
-        </p>
-        <p>評価点　71点</p>
+        </div>
+        <div>評価点</div>
     </mat-card-content>
     <mat-card-footer>
         <section>
@@ -54,10 +54,10 @@
 <mat-card class="book-card">
     <mat-card-title>※追加された本※</mat-card-title>
     <mat-card-content>
-        <p>
+        <div>
             〜あらすじ〜
-        </p>
-        <p>評価点　71点</p>
+        </div>
+        <div>評価点</div>
     </mat-card-content>
     <mat-card-footer>
         <section>

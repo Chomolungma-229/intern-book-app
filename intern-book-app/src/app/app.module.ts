@@ -12,6 +12,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { ListComponent } from './pages/list/list.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -30,6 +31,7 @@ import { ListComponent } from './pages/list/list.component';
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
