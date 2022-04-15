@@ -2,14 +2,16 @@
   margin: 10px 20px;
 }
 
-.mid-width {
+.input-area {
   min-width: 150px;
   max-width: 600px;
   width: 100%;
 }
-.button {
-  display: grid;
-  justify-content: right;
+
+.text-wrap {
+  min-width: 150px;
+  width: 100%;
+  word-break: break-all;
 }
 
 .rating {
