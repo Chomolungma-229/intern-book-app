@@ -5,18 +5,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSliderModule } from '@angular/material/slider';
-import { PagesComponent } from './pages/pages.component';
-
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-
 import { AppRoutingModule } from './app-routing.module';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import { ListComponent } from './pages/list/list.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PagesComponent,
+    ToolbarComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,9 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatInputModule,
     AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

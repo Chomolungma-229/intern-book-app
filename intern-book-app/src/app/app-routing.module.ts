@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule,Routes } from '@angular/router';
-import { PagesComponent } from './pages/pages.component';
+import { ListComponent } from './pages/list/list.component';
 
 const routes : Routes = [
-  { path: '', redirectTo: '/pages', pathMatch: 'full' },
-  { path: 'pages', component: PagesComponent }
+  { path: '', redirectTo: '/pages/list', pathMatch: 'full' },
+  { path: 'pages/list', component: ListComponent }
 ];
 
 @NgModule({
