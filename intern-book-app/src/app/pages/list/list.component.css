@@ -1,0 +1,25 @@
+.register {
+  margin: 10px 20px;
+}
+
+.input-area {
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.text-wrap {
+  min-width: 150px;
+  width: 100%;
+  word-break: break-all;
+}
+
+.rating {
+  min-width: 150px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.book-card {
+  margin: 10px 20px;
+}
