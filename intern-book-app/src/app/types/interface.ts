@@ -1,11 +1,11 @@
 
-export interface BookInterface {
+export interface Book {
     name: string;
     detail: string;
     evaluation: number;
 }
 
-export const BOOKS: BookInterface[] = [
+export const BOOKS: Book[] = [
     {
         name: '斜陽',
         detail: '人間は、恋と革命のために生まれてきたのだ。',
@@ -26,4 +26,9 @@ export const BOOKS: BookInterface[] = [
         detail: '芥見下々によって描かれた漫画',
         evaluation: 87
     },
+    {
+        name: '※追加された本※',
+        detail: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+        evaluation: 0
+    }
 ]

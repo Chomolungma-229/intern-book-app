@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BOOKS } from 'src/app/types/interface';
+import { Book, BOOKS } from 'src/app/types/interface';
 
 @Component({
   selector: 'app-list',
@@ -9,10 +9,16 @@ import { BOOKS } from 'src/app/types/interface';
 export class ListComponent implements OnInit {
 
   books = BOOKS;
+  selectedBook?: Book;
+
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(book: Book): void {
+    this.selectedBook = book;
   }
 
 }

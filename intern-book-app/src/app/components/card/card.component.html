@@ -1,0 +1,15 @@
+<div *ngIf="books">
+    <mat-card class="book-card">
+        <mat-card-title class="text-wrap">{{books.name}}</mat-card-title>
+        <mat-card-content class="text-wrap">
+            <div>
+                {{books.detail}}
+            </div>
+            <div>評価:{{books.evaluation}}点</div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-raised-button color="warn">削除</button>
+        </mat-card-actions>
+    </mat-card>
+
+</div>

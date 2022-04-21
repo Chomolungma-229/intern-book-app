@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 //pages
 import { ListComponent } from './pages/list/list.component';
@@ -16,6 +17,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { MatSliderModule } from '@angular/material/slider';
     AppComponent,
     ToolbarComponent,
     ListComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,8 @@ import { MatSliderModule } from '@angular/material/slider';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
