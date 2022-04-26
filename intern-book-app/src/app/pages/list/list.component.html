@@ -32,28 +32,5 @@
     </section>
 </mat-card>
 
-<mat-card class="book-card" *ngFor="let book of books">
-    <mat-card-title class="text-wrap">{{book.name}}</mat-card-title>
-        <mat-card-content class="text-wrap">
-            <div>
-                {{book.detail}}
-            </div>
-            <div>評価:{{book.evaluation}}点</div>
-        </mat-card-content>
-        <mat-card-actions align="end">
-            <button mat-raised-button color="warn">削除</button>
-        </mat-card-actions>
-</mat-card>
 
-<mat-card class="book-card">
-    <mat-card-title class="text-wrap">※追加された本※</mat-card-title>
-        <mat-card-content class="text-wrap">
-            <div>
-                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            </div>
-            <div>評価点</div>
-        </mat-card-content>
-        <mat-card-actions align="end">
-            <button mat-raised-button color="warn">削除</button>
-        </mat-card-actions>
-</mat-card>
+<app-card [booklist]="books"></app-card>
