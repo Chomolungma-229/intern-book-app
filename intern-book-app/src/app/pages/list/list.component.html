@@ -32,10 +32,5 @@
     </section>
 </mat-card>
 
-<mat-card class="book-card" *ngFor="let book of books"
-[class.selected]="book === selectedBook"
-(click)="onSelect(book)">
-{{book.name}}
-</mat-card>
 
-<app-card [books] = "selectedBook" ></app-card>
+<app-card [booklist]="books"></app-card>

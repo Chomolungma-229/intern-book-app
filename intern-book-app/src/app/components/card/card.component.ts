@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { Book, BOOKS } from 'src/app/types/interface';
+import { Book } from 'src/app/types/interface';
 
 @Component({
   selector: 'app-card',
@@ -9,7 +9,7 @@ import { Book, BOOKS } from 'src/app/types/interface';
 
 export class CardComponent implements OnInit {
 
-  @Input() books?: Book;
+  @Input() booklist: Book[] = [];
 
   constructor() { }
 
