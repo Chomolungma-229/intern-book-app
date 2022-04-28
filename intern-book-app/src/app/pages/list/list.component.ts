@@ -23,9 +23,11 @@ export const BOOKS: Book[] = [
 export class ListComponent implements OnInit {
 
   books = BOOKS;
-  name = '';
-  detail = '';
-  evaluation = 0;
+  bookObj : Book = {
+    name : '',
+    detail : '',
+    evaluation : 0
+  }
 
   constructor() { }
 
@@ -35,9 +37,9 @@ export class ListComponent implements OnInit {
   addBook() {
     this.books.push(
       {
-      name: this.name,
-      detail: this.detail,
-      evaluation: this.evaluation
+      name: this.bookObj.name,
+      detail: this.bookObj.detail,
+      evaluation: this.bookObj.evaluation
       }
     )
   }

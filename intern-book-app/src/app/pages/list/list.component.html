@@ -4,21 +4,21 @@
         <div>
             <mat-form-field class="input-area" appearance="fill">
                 <mat-label>書籍名</mat-label>
-                <input matInput placeholder="書籍名" name="name" [(ngModel)]="name">
+                <input matInput placeholder="書籍名" name="name" [(ngModel)]="bookObj.name">
             </mat-form-field>
         </div>
 
         <div>
             <mat-form-field class="input-area" appearance="fill">
                 <mat-label>あらすじ</mat-label>
-                <textarea matInput placeholder="あらすじ" name="detail" [(ngModel)]="detail"></textarea>
+                <textarea matInput placeholder="あらすじ" name="detail" [(ngModel)]="bookObj.detail"></textarea>
             </mat-form-field>
         </div>
 
         <div>
             <mat-form-field class="rating"appearance="fill">
                 <mat-label>評価点</mat-label>
-                <input matInput placeholder="評価点" name="evaluation" [(ngModel)]="evaluation">
+                <input matInput placeholder="評価点" name="evaluation" [(ngModel)]="bookObj.evaluation" >
             </mat-form-field>
         </div>
 
