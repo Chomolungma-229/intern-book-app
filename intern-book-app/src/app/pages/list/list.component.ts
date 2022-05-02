@@ -1,23 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/types/interface';
 
-@Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
-})
-export class ListComponent implements OnInit {
-
-  books = BOOKS;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-
-}
-
 export const BOOKS: Book[] = [
   {
       name: '斜陽',
@@ -25,23 +8,39 @@ export const BOOKS: Book[] = [
       evaluation: 80
   },
   {
-      name: 'ぼくはイエローでホワイトで、ちょっとブルー',
-      detail: 'イギリスに住む著者が息子を通じて人種による文化の違いについて考える、そんな感じの話',
-      evaluation: 85
-  },
-  {
-      name: '化物語',
-      detail: '西尾維新によって書かれた癖のあるライトノベル',
-      evaluation: 85
-  },
-  {
-      name: '呪術廻戦',
-      detail: '芥見下々によって描かれた漫画',
-      evaluation: 87
-  },
-  {
       name: '※追加された本※',
       detail: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
       evaluation: 0
   }
 ]
+
+@Component({
+  selector: 'app-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
+})
+
+export class ListComponent implements OnInit {
+
+  books = BOOKS;
+  bookObj : Book = {
+    name : '',
+    detail : '',
+    evaluation : 0
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  addBook() {
+    this.books.push(
+      {
+      name: this.bookObj.name,
+      detail: this.bookObj.detail,
+      evaluation: this.bookObj.evaluation
+      }
+    )
+  }
+}

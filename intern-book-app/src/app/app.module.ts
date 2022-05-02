@@ -9,6 +9,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ListComponent } from './pages/list/list.component';
 //components
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { CardComponent } from './components/card/card.component';
+
 //Angular Material
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
@@ -17,7 +19,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
-import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
