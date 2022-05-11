@@ -43,4 +43,8 @@ export class ListComponent implements OnInit {
       }
     )
   }
+
+  deleteBook(bookId: number) {
+    this.books.splice(bookId,1);
+  }
 }

@@ -31,4 +31,4 @@
 </mat-card>
 
 
-<app-card [booklist]="books"></app-card>
+<app-card [booklist]="books" (deleteBookEvent)="deleteBook($event)"></app-card>
