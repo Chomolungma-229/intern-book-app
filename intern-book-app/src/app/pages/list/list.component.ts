@@ -44,6 +44,7 @@ export class ListComponent implements OnInit {
       evaluation: this.bookObj.evaluation
       }
     )
+    this.methodCount++;
   }
 
   deleteBook(bookId: number) {
