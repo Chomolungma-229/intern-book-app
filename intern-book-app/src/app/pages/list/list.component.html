@@ -30,5 +30,5 @@
     </section>
 </mat-card>
 
-
 <app-card [booklist]="books" (deleteBookEvent)="deleteBook($event)"></app-card>
+<div *ngIf=" bookIndex == 0 && methodCount == 0">データがありません</div>

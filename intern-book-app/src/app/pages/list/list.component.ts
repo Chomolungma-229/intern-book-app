@@ -28,6 +28,8 @@ export class ListComponent implements OnInit {
     detail : '',
     evaluation : 0
   }
+  bookIndex : number = BOOKS.length;
+  methodCount : number = BOOKS.length;
 
   constructor() { }
 
@@ -46,5 +48,7 @@ export class ListComponent implements OnInit {
 
   deleteBook(bookId: number) {
     this.books.splice(bookId,1);
+    this.bookIndex = bookId;
+    this.methodCount--;
   }
 }
