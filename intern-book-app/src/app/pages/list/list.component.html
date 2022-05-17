@@ -29,6 +29,10 @@
         </mat-card-actions>
     </section>
 </mat-card>
-
-
-<app-card [booklist]="books"></app-card>
+<div *ngIf="books.length != 0; then bookBlock; else emptyBlock"></div>
+<ng-template #bookBlock>
+    <app-card [booklist]="books" (deleteBookEvent)="deleteBook($event)"></app-card>
+</ng-template>
+<ng-template #emptyBlock>
+    <span class="empty-text">データがありません</span>
+</ng-template>

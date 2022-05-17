@@ -14,6 +14,7 @@ export const BOOKS: Book[] = [
   }
 ]
 
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -42,5 +43,9 @@ export class ListComponent implements OnInit {
       evaluation: this.bookObj.evaluation
       }
     )
+  }
+
+  deleteBook(bookId: number) {
+    this.books.splice(bookId,1);
   }
 }
